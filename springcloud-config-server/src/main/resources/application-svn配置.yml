@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: subversion
+  cloud:
+    config:
+      server:
+        svn:
+          uri: http://106.15.1.61/svn/demo/config
+          username: lyb
+          password: 123456
+          default-label: /
+         
+ 
+
+     

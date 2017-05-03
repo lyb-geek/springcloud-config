@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kingwinstar/config-repo
+          repos:
+            simple: https://github.com/kingwinstar/simple
+            special:
+              pattern: special*/dev*,*special*/test*
+              uri: https://github.com/kingwinstar/special
+            local:
+              pattern: local*
+              uri: file:/home/configsvc/config-repo
+
+     

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: foobar
+  cloud:
+    config:
+      uri: http://localhost:8080
+      username: user
+      password: 123456
+      profile: dev
+ 
+  
+    
+     
